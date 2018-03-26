@@ -1,0 +1,24 @@
+Ca dev, as vrea sa stiu sa fac legatura intre o baza de date si un server (MySQL/Oracle)
+Ca dev, as vrea sa iau in considerare cazul in care un utilizator cauta un nume de utilizator inexistent
+Ca dev, as vrea sa asigur stergerea automata a sub/categoriilor nou-create de utilizatori, care nu au minim 1 anunt (rollback)
+Ca dev, as vrea sa elimin postarile unui utilizator care a solicitat stergerea contului
+Ca dev, as vrea sa restrictionez un utilizator obisnuit avand in vedere stergerea de categorii/anunturi care nu ii apartin
+Ca dev, as vrea sa generez automat un e-mail catre utilizatorul al carui anunt a fost proaspat modificat de un adminitrator
+Ca dev, as vrea sa ii pun la dispozitie utilizatorului care doreste sa adauge/elimine un anunt un chestionar pe baza caruia anuntul respectiv va fi incadrat intr-o categorie/subcategorie
+Ca utilizator, vreau sa imi pot crea un cont pe site
+Ca utilizator, as vrea sa ordonez anunturile/evenimentele (exp: Cele mai cautate in ordine crescatoare/descrescatoare dupa nr de accesari)
+Ca utilizator, vreau sa caut in baza de anunturi, pe categorii/subcategorii
+Ca utilizator, vreau sa pot sa caut alti utilizatori existenti
+Ca utilizator, vreau sa am acces la un forum
+Ca utilizator, vreau sa pot lasa mesaje altor utilizatori logati in acel moment
+Ca utilizator, vreau sa pot crea o noua categorie/subcategorie si sa postez noi anunturi
+Ca utilizator, vreau sa pot sterg si sa modific o categorie/subcategorie/un anunt care imi apartine
+Ca administrator, vreau sa pot modifica postarile altor utilizatori
+Ca administrator, vreau sa pot adauga texte optionale in momentul in care am modificat postarea unui utilizator
+Ca administrator, vreau sa pot sa restrictionez un utilizator (pe o perioada precizata de mine) de la talk
+Ca administrator, vreau sa pot sterge toate mesajele unui utilizator de pe forum
+
+
+
+
+
