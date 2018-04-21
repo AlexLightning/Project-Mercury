@@ -8,8 +8,11 @@
 
 <?php
 
-include "db_connect.php";
 /*
+
+pentru conectare baza de date
+include "db_connect.php";
+
 chestii pt logare
 session_start();
 if($_SERVER['REQUEST_METHOD']=='POST') 
