@@ -6,22 +6,6 @@
 </head>
 <body>
 
-<?php
-
-/*
-
-pentru conectare baza de date
-include "db_connect.php";
-
-chestii pt logare
-session_start();
-if($_SERVER['REQUEST_METHOD']=='POST') 
-    if(isset($_POST['login']))
-        include 'login.php';
-    elseif(isset($_POST['register']))
-        include 'register.php';*/
-?>
-
 
 <div class="bkg" style="background-image: url('img/main.jpg');">
 	<div class="bkg2"></div>
