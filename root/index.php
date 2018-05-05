@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>SellIt</title>
+	<title>Sell It</title>
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie" />
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,7 +11,7 @@
 	<div class="bkg2"></div>
 </div>
 <div class="continut">
-	<div class="col-md-10 col-md-offset-1">
+	<div>
 		<h1>SellIt</h1>
 		<h2>Your gate to the world</h2>
 		<form method="get" action="/search" id="search">
