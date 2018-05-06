@@ -17,8 +17,9 @@
 <nav>
 	<ul class="menu">
 		<li><a href="adv.php">Global Adverts</a></li>
-		<li><a href="user_cat.php">My Categories</a></li>
+		<li><a href="user_cat.php">Add Category</a></li>
 		<li><a href="user_adv.php">My Adverts</a></li>
+		<li><a href="user_cat_view.php">My Categories</a></li>
 		<li><a href="forum.php">Visit Forum</a></li>
 		<li><a href="chat.php">View Chat</a></li>
 		<li><a href="users.php">Browse Users</a></li>
