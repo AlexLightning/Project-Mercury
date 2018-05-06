@@ -17,11 +17,10 @@ if (!$query) {
 </head>
 <body>
 	<a class="titlu" href="user_main.php"><h1>SellIt</h1></a>	
-	<div class="bkg" style="background-image: url('img/users.jpg');">
+	<div class="bkg" style="background-image: url('img/users.jpg'); position:fixed">
 		<div class="bkg2"></div>
 	</div>
 	<h2>Our Community</h2>
-	<div class="flow">
 	<table class="data-table">
 		<thead>
 			<tr>
@@ -47,6 +46,5 @@ if (!$query) {
 		?>
 		</tbody>
 	</table>
-	</div>
 </body>
 </html>

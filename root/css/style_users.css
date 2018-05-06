@@ -46,10 +46,6 @@ a.titlu, a.titlu:hover {
 	border-color: #6ea1cc;
 }
 
-.flow {
-   height: 300px;
-   overflow-y: scroll;
-}
 
 
 .data-table tbody td {
