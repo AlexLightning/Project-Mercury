@@ -3,9 +3,10 @@
 
 <head>
 <meta charset="uft-8">
-<title> SellIt </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<title> Sell It </title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie" />
+<link rel="stylesheet" type="text/css" href="css/style_l.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 
 <?php
@@ -28,7 +29,7 @@ if (isset($_POST['login_user'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: index.php');
+  	  header('location: user_main.php');
   	}else {
   		array_push($errors, "Wrong username/password combination");
   	}
@@ -37,16 +38,10 @@ if (isset($_POST['login_user'])) {
 ?>
 
 <body>
-<div class="bkg" style="background-image: url('main.jpg'); position: fixed">
+<div class="bkg" style="background-image: url('img/login.jpg');">
 	<div class="bkg2"></div>
 </div>
-	<div class="row menu" style="margin-top: -70px !important;">
-		<div class="container">
-			<div class="col-md-2">
-				<a href="index.html"><h3 >SellIt</h3></a>
-			</div>
-		</div>
-	</div>
+<a class="titlu" href="index.php"><h1>SellIt</h1></a>
 	<div class="row form">
 		<div class="container">
 			<div class="col-md-4 col-md-offset-4">
@@ -63,9 +58,11 @@ if (isset($_POST['login_user'])) {
 					</label>
 					<input type="password" name=" password" id="Choose">
 					<br>
+					<div class="wrapper-class">
 			        <label for="Show">
 						Show Password: 
-					<input type="checkbox" onclick="myFunction()" id="Show">
+					<div class="btn" onclick="fct()"><input type="checkbox" onclick="myFunction()" id="Show"></div>
+					</div>
 					<input class="submit" type="submit" name="login_user" value="SUBMIT">
 				</form>
 			</div>
@@ -77,12 +74,20 @@ if (isset($_POST['login_user'])) {
 
 <script>
 function myFunction() {
-    var x = document.getElementById("myInput");
+    var x = document.getElementById("Choose");
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
     }
+}
+
+function fct() {
+	x=document.getElementById("Show");
+	if(x.checked==false)
+		x.checked=true;
+	else
+		x.checked=false;
 }
 </script>
 

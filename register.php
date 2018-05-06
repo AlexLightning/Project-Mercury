@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<title> SellIt </title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie" />
+	<link rel="stylesheet" type="text/css" href="css/style_r.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title> Sell It </title>
 </head>
 
 <?php
@@ -57,75 +58,76 @@ if (isset($_POST['reg_user'])) {
 
 
 <body>
-<div class="bkg" style="background-image: url('main.jpg') ; position:fixed">
+<div class="bkg" style="background-image: url('img/register.jpg') ; position:fixed">
 	<div class="bkg2"></div>
 </div>
-	<div class="row menu" style="margin-top: -70px !important;">
-		<div class="container">
-			<div class="col-md-2">
-				<a href="index.html"><h3>SellIt</h3></a>
-			</div>
-        </div>
-    </div>		
+<a class="titlu" href="index.php"><h1>SellIt</h1></a>	
 	<div class="row form">
 	    <div class="container">
 			<div class="col-md-4 col-md-offset-4">
 				<form method="post">
 					<h3> REGISTER </h3>
 					<br>
+					<div class="column">
 					<label for="FName" class="firstp">
 						First Name:
 					</label>
-					<input type="text" name="firstname" id="FName" >
+					<input type="text" name="firstname" id="FName" required>
 					<br>
 					<label for="LName">
 						Last Name:
 					</label>
-					<input type="text" name="lastname" id="LName" >
+					<input type="text" name="lastname" id="LName" required>
 					<br>
 					<label for="Email">
 					    Email:
 					</label>
-					<input type="fieldsetup" name="email" id="Email" placeholder="sellit@yahoo.com">
+					<input type="email" name="email" id="Email" placeholder="sellit@yahoo.com" required>
 					<br>
 					<label for="tel">
 					    Telephone:
 					</label>
-					<input type="tel" name="tel" id="tel" >
+					<input type="tel" name="tel" id="tel" pattern="^[0-9-+s()]*$" required>
 					<br>
 					<label for="WPage">
 					    Web Page:
 					</label>
-					<input type="text" name="website" id="WPage" >
+					<input type="text" name="website" id="WPage" required>
 					<br>
+					</div>
+					<div class="column">
 					<label for="User">
 					    Username:
 					</label>
-					<input type="text" name="username" id="User" >
+					<input type="text" name="username" id="User" required>
 					<br>
 					<label for="pw">
 					    Password:
 					</label>
-					<input type="password" name="password" id="pw" >
-					<label for="Show">
-						Show Password: 
-					</label>	
-					<input type="checkbox" onclick="myFunction()" id="Show">
-					<br>
+					<input type="password" name="password" id="pw">
+					<br><br>
+					<div class="wrapper-class">
+					<label for="Show">Show Password: </label>
+					<div class="btn" onclick="fct()"> <input type="checkbox" onclick="myFunction()" id="Show"/>	</div>
+					</div>
 					<label for="us/adm">
 						Please, select User or Administrator:
 					</label>
 					<br>
+					<div class="wrapper-class">
 					<label>
 						User
 					</label>
-					<input type="radio" name="userMode" value="0" checked id="us/adm"> 
+					<div class="btn" onclick="fct2()"> <input type="radio" name="userMode" value="0" checked id="us"> 
+					</div>
+					<div class="wrapper-class">
 					<label>
 						Administrator
 					</label>
-					<input type="radio" name="userMode" value="1" checked id="us/adm"> 
-					<br>
+					<div class="btn" onclick="fct3()"> <input type="radio" name="userMode" value="1" id="adm"></div>
+					</div>
 					<input class="submit" type="submit" name="reg_user" value="SUBMIT">
+					</div>
 				</form>
 			</div>
 		</div>
@@ -133,12 +135,30 @@ if (isset($_POST['reg_user'])) {
 	
 <script>
 function myFunction() {
-    var x = document.getElementById("myInput");
+    var x = document.getElementById("pw");
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
     }
+}
+
+function fct() {
+	x=document.getElementById("Show");
+	if(x.checked==false)
+		x.checked=true;
+	else
+		x.checked=false;
+}
+
+function fct2() {
+	document.getElementById("adm").checked=false;
+	document.getElementById("us").checked=true;
+}
+
+function fct3() {
+	document.getElementById("us").checked=false;
+	document.getElementById("adm").checked=true;
 }
 </script>
 

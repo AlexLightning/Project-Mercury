@@ -1,0 +1,86 @@
+h1 {
+ font-family: 'Cookie';
+ margin-top: 0px;
+ color: white;
+ font-size: 100px;
+}
+
+h2 {
+    margin-top: 0px;
+    color: white;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 25%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.bkg 
+{
+	background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bkg .bkg2
+{
+	background: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 50vh;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  text-align: center;
+}
+.menu li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.menu li a:hover{
+	color: lime;
+}
+
+@-webkit-keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
