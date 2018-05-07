@@ -17,7 +17,7 @@
 		<!-- Bootstrap -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
-		<link rel="stylesheet" type="text/css" href="css/MenuAfterLogin.css">
+		<link rel="stylesheet" type="text/css" href="css/style_users.css">
 		
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cookie">
 
@@ -123,9 +123,12 @@
 		
 		</nav>
 	
-		<header>
-			<h1>View categories</h1>
-		</header>
+		<div class="bkg" style="background-image: url('img/users.jpg'); position:fixed">
+			<div class="bkg2"></div>
+		</div>
+		
+		<h2>View categories</h2>
+		
 		
 		<table class="data-table">
 			<thead>

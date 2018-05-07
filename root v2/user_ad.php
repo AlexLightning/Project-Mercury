@@ -166,9 +166,25 @@ if (count($errors) == 0) {
 <br>
 <label> Categorie </label>
 <select name="categ">
-<option value="Auto, moto si ambarcatiuni"> Auto, moto si ambarcatiuni </option>
-<option value="Electronice si electrocasnice"> Electronice si electrocasnice </option>
-<option value="Imobiliare"> Imobiliare </option>
+<optgroup label="Auto, moto si ambarcatiuni">
+<option value="Auto, moto si ambarcatiuni">Auto, moto si ambarcatiuni</option>
+<option value="Auto, moto si ambarcatiuni">Autoturisme</option>
+<option value="Auto, moto si ambarcatiuni">Motociclete - Scutere - ATV</option>
+<option value="Auto, moto si ambarcatiuni">Camioane - Rulote - Remorci</option>
+<option value="Auto, moto si ambarcatiuni">Ambarcatiuni</option>
+<optgroup label="Electronice si electrocasnice">
+<option value="Electronice si electrocasnice">Electronice si electrocasnice</option>
+<option value="Electronice si electrocasnice">Telefoane</option>
+<option value="Electronice si electrocasnice">Laptop – Calculator</option>
+<option value="Electronice si electrocasnice">TV - Audio - Video</option>
+<option value="Electronice si electrocasnice">Electrocasnice</option>
+<option value="Electronice si electrocasnice">Aparate Foto - Camere Video</option>
+<optgroup label="Imobiliare">
+<option value="Imobiliare">Imobiliare</option>
+<option value="Imobiliare">Apartamente - Garsoniere de vanzare</option>
+<option value="Imobiliare">Apartamente - Garsoniere de inchiriat</option>
+<option value="Imobiliare">Case de vanzare</option>
+<option value="Imobiliare">Terenuri</option>
 </select>
 <br>
 <br>
