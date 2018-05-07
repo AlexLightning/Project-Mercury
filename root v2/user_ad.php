@@ -168,23 +168,23 @@ if (count($errors) == 0) {
 <select name="categ">
 <optgroup label="Auto, moto si ambarcatiuni">
 <option value="Auto, moto si ambarcatiuni">Auto, moto si ambarcatiuni</option>
-<option value="Auto, moto si ambarcatiuni">Autoturisme</option>
-<option value="Auto, moto si ambarcatiuni">Motociclete - Scutere - ATV</option>
-<option value="Auto, moto si ambarcatiuni">Camioane - Rulote - Remorci</option>
-<option value="Auto, moto si ambarcatiuni">Ambarcatiuni</option>
+<option value="Autoturisme">Autoturisme</option>
+<option value="Motociclete - Scutere - ATV">Motociclete - Scutere - ATV</option>
+<option value="Camioane - Rulote - Remorci">Camioane - Rulote - Remorci</option>
+<option value="Ambarcatiuni">Ambarcatiuni</option>
 <optgroup label="Electronice si electrocasnice">
 <option value="Electronice si electrocasnice">Electronice si electrocasnice</option>
-<option value="Electronice si electrocasnice">Telefoane</option>
-<option value="Electronice si electrocasnice">Laptop – Calculator</option>
-<option value="Electronice si electrocasnice">TV - Audio - Video</option>
-<option value="Electronice si electrocasnice">Electrocasnice</option>
-<option value="Electronice si electrocasnice">Aparate Foto - Camere Video</option>
+<option value="Telefoane">Telefoane</option>
+<option value="Laptop – Calculator">Laptop – Calculator</option>
+<option value="TV - Audio - Video">TV - Audio - Video</option>
+<option value="Electrocasnice">Electrocasnice</option>
+<option value="Aparate Foto - Camere Video">Aparate Foto - Camere Video</option>
 <optgroup label="Imobiliare">
 <option value="Imobiliare">Imobiliare</option>
-<option value="Imobiliare">Apartamente - Garsoniere de vanzare</option>
-<option value="Imobiliare">Apartamente - Garsoniere de inchiriat</option>
-<option value="Imobiliare">Case de vanzare</option>
-<option value="Imobiliare">Terenuri</option>
+<option value="Apartamente - Garsoniere de vanzare">Apartamente - Garsoniere de vanzare</option>
+<option value="Apartamente - Garsoniere de inchiriat">Apartamente - Garsoniere de inchiriat</option>
+<option value="Case de vanzare">Case de vanzare</option>
+<option value="Terenuri">Terenuri</option>
 </select>
 <br>
 <br>
