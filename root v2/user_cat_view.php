@@ -127,9 +127,10 @@
 			<div class="bkg2"></div>
 		</div>
 		
-		<h2>View categories</h2>
-		
-		
+		<header>
+		<h2>Categories</h2>
+		</header>	
+			
 		<table class="data-table">
 			<thead>
 				<tr>
