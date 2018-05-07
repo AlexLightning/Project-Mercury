@@ -128,7 +128,7 @@
 		</div>
 		
 		<header>
-		<h2>Categories</h2>
+		<h2>Created Categories</h2>
 		</header>	
 			
 		<table class="data-table">

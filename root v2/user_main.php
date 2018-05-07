@@ -125,7 +125,7 @@
 		<li><a href="user_ad.php">Add Advert</a></li>
 		<li><a href="user_cat.php">Add Category</a></li>
 		<li><a href="user_ad_view.php">My Adverts</a></li>
-		<li><a href="user_cat_view.php">View Categories</a></li>
+		<li><a href="user_cat_view.php">View Created Categories</a></li>
 		<li><a href="forum.php">Visit Forum</a></li>
 		<li><a href="chat.php">View Chat</a></li>
 		<li><a href="users.php">Browse Users</a></li>
