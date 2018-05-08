@@ -1,0 +1,114 @@
+html{
+	padding-top: 7.5%;
+}
+
+.navbar-brand{
+	font-family: 'Cookie';
+	font-size: 50px !important;
+}
+
+body {
+    overflow:hidden;
+}
+
+.titlu h1{
+	font-family: 'Cookie';
+	margin-top: 0px;
+	color: white;
+	font-size: 100px;
+}
+
+
+.form .col-md-4 {
+	color: white;
+	margin-top: 100px;	
+	box-shadow: 0px 0px 1px;
+	padding-bottom: 20px;
+	background-color: #404040;
+}
+
+.form form {
+	padding-left: 15px; 
+}
+
+a.titlu:hover {
+    text-decoration: none !important;
+}
+
+
+.form .container .col-md-4 h3 {
+	display: inline;
+	background-color: #138770;
+	margin-top: -23px;
+	color: white;
+	font-size: 14px;
+	padding: 6px 17px;
+}
+
+.form .container .col-md-4 .create h3{
+	font-size: 13px;
+	padding: 8px 13px;
+	text-shadow: 1px 1px 3px rgba(10,10,10, .3);  
+}
+
+.form .container .col-md-4 label{
+	padding: 15px 0 4px 0;
+}
+
+.firstp {
+	padding-top: 40px;
+}
+
+.submit {
+	margin-top: 35px;
+	background-color: #138770;
+	padding: 12px 0; 
+	color: white;
+	border-style: none;
+	border-radius: 5px;
+	font-family: Proxima-Semibold;
+}
+
+input {
+	width: 100%;
+	padding: 6px 0 6px 13px;
+	background-color: #f6f6f6;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(20,20,20,0.1); 
+}
+
+.wrapper-class input[type="checkbox"] {
+  width: 15px;
+}
+
+.btn{margin-top: 1.6px;}
+
+.wrapper-class label {
+  display: inline;
+  }
+
+.bkg 
+{
+	background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bkg .bkg2
+{
+	background: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
+

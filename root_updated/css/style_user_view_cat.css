@@ -1,0 +1,114 @@
+html{
+	padding-top: 7.5%;
+}
+
+.navbar-brand{
+	font-family: 'Cookie';
+	font-size: 50px !important;
+}
+
+table {
+	margin: auto;
+
+}
+
+h2 {
+	margin: auto 0;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#jos {
+	margin-top:7px;
+	
+}
+
+h3 { text-align: center;}
+
+h2,h3 {color: white !important;}
+
+
+a.titlu, a.titlu:hover {
+    text-decoration: none !important;
+}
+
+.wrap {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.data-table {
+	border-collapse: collapse;
+	font-size: 14px;
+	min-width: 537px;
+}
+
+.data-table th, 
+.data-table td {
+	border: 1px solid #e1edff;
+	padding: 7px 17px;
+}
+
+
+.data-table thead th {
+	background-color: green;
+	color: #FFFFFF;
+	border-color: #6ea1cc;
+}
+
+
+
+.data-table tbody td {
+	color: #353535;
+	background-color: white;
+}
+
+.data-table tbody td:first-child{
+	text-align: center;
+}
+
+.data-table thead th:first-child{
+	text-align: center;
+}
+
+#nothere{ text-align: left; }
+
+#search input[type="text"]
+{
+    background: url(search-white.png) no-repeat 11px 9px white;
+    border: 1px solid white;
+    color: black;
+    width: 320px;
+	height: 35px;
+    padding: 6px 15px 6px 35px;
+	margin-up: 50px;
+	outline: none;
+	border-radius: 4px;
+}
+
+.center{text-align: center;}
+
+.bkg 
+{
+	background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bkg .bkg2
+{
+	background: #404040;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+}
