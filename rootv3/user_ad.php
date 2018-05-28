@@ -48,7 +48,7 @@ if (count($errors) == 0) {
 			echo "<script>
 							alert('Advert succesfully registred!');
 							</script>";
-			
+			header('location: user_main.php');
 			}
 
 			

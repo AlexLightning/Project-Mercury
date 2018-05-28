@@ -118,6 +118,8 @@ if (r == true) {
 		<header>
 		<h2>Created Adverts</h2>
 		</header>	
+		
+		
 			
 	<div id="live_data"></div>
 	<div id="center">
@@ -128,6 +130,7 @@ if (r == true) {
 
 <script>  
  $(document).ready(function(){  
+		
       function fetch_data()  
       {  
            $.ajax({  

@@ -189,7 +189,6 @@ if (!$query or !$query3) {
 	  else
 	  {
 		  document.getElementById('live_data').style.display='none';
-		  document.getElementById('forUser').style.display='block';
 	  }
       function fetch_data()  
       {  
@@ -207,7 +206,7 @@ if (!$query or !$query3) {
            $.ajax({  
                 url:"edit_user.php",  
                 method:"POST",  
-                data:{id:id, text:text, column_name:column_name, txt:txt},  
+                data:{id:id, text:text, column_name:column_name},  
                 dataType:"text",			
 				success:function(data){   
                           fetch_data();  
@@ -215,27 +214,27 @@ if (!$query or !$query3) {
            });  
       }  
       $(document).on('blur', '.username', function(){  
-           var id = $(this).data("id1");  
+           var id = $(this).data("id0");  
            var username = $(this).text();  
            edit_data(id, username, "username");  
       });  
       $(document).on('blur', '.firstname', function(){  
-           var id = $(this).data("id2");  
+           var id = $(this).data("id1");  
            var firstname = $(this).text();  
            edit_data(id,firstname, "firstname");  
       });  
 	  $(document).on('blur', '.lastname', function(){  
-           var id = $(this).data("id3");  
+           var id = $(this).data("id2");  
            var lastname = $(this).text();  
            edit_data(id,lastname, "lastname");  
       });  
 	  $(document).on('blur', '.email', function(){  
-           var id = $(this).data("id5");  
+           var id = $(this).data("id3");  
            var email = $(this).text();  
            edit_data(id,email, "email");  
       }); 
 	  $(document).on('blur', '.telefon', function(){  
-           var id = $(this).data("id5");  
+           var id = $(this).data("id4");  
            var telefon = $(this).text();  
            edit_data(id,telefon, "telefon");  
       }); 
@@ -245,7 +244,7 @@ if (!$query or !$query3) {
            edit_data(id,web, "web");  
       }); 
 	  $(document).on('blur', '.admin', function(){  
-           var id = $(this).data("id5");  
+           var id = $(this).data("id7");  
            var admin = $(this).text();  
            edit_data(id,admin, "admin");  
       }); 

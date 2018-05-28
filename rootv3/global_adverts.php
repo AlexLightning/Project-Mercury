@@ -149,7 +149,6 @@ header('location: index.php');}
 	}
 	
 	?>	
-		
 	<table id="forUser" class="data-table">
 		<thead>
 			<tr>
@@ -200,7 +199,6 @@ header('location: index.php');}
 	  else
 	  {
 		  document.getElementById('live_data').style.display='none';
-		  document.getElementById('forUser').style.display='block';
 	  }
       function fetch_data()  
       {  

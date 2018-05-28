@@ -40,7 +40,7 @@ include "db_connect.php";
  else  
  {  
       $output .= '<tr>  
-                          <td colspan="4">No Users</td>  
+                          <td colspan="8">No Users</td>  
                      </tr>';  
  }  
  $output .= '</table>  

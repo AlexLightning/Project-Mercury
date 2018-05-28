@@ -17,6 +17,8 @@ table {
 	
 }
 
+#forUser {magin: auto;}
+
 h2 {
 	margin: auto 0;
 	text-align: center;
@@ -83,6 +85,7 @@ a.titlu, a.titlu:hover {
 }
 
 .center{text-align: center;}
+
 
 .bkg 
 {

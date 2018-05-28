@@ -113,30 +113,6 @@ if (r == true) {
 		<header>
 		<h2>Created Categories</h2>
 		</header>	
-		
-		<table id="forUser" class="data-table">
-			<thead>
-				<tr>
-					<th>NUMBER</th>
-					<th>TITLE</th>
-					<th>DESCRIPTION</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-					$query3 = mysqli_query($mysqli, $sql);
-					$nr=1;
-					while ($row = mysqli_fetch_array($query3)){
-						echo '<tr>
-							<td>'.$nr.'</td>
-							<td>'.$row['titlu'].'</td>
-							<td>'.$row['descriere'].'</td>
-							</tr>';
-						$nr++;
-					}
-				?>
-			</tbody>
-		</table>
 			
 		<div id="live_data"></div>
 		<div id="center">
@@ -150,64 +126,111 @@ if (r == true) {
 	var admin = <?php echo $_SESSION['admin']; ?>;
 	  if(admin==1)
 	  {
-		  document.getElementById('live_data').style.display='block';
-		  document.getElementById('forUser').style.display='none';
+			  function fetch_data()  
+		  {  
+			   $.ajax({  
+					url:"select_cat_admin.php",  
+					method:"POST",  
+					success:function(data){  
+						 $('#live_data').html(data);  
+					}  
+			   });  
+		  }  
+		  fetch_data();  
+		  function edit_data(id, text, column_name,oldt)  
+		  {  
+				var txt = prompt("Please insert msg:", "None.");
+			   $.ajax({  
+					url:"edit_cat_admin.php",  
+					method:"POST",  
+					data:{id:id, text:text, column_name:column_name,txt:txt,oldt:oldt},  
+					dataType:"text",  
+					success:function(data){   
+							  fetch_data();  
+						 }  
+			   });  
+		  }  
+		  $(document).on('blur', '.titlu', function(){  
+			   var id = $(this).data("id1");  
+			   var titlu = $(this).text(); 
+				var old=$(this).data("title");
+			   edit_data(id, titlu, "titlu", old);  
+		  });    
+		  $(document).on('blur', '.descriere', function(){  
+			   var id = $(this).data("id2");  
+			   var descriere = $(this).text();  
+			   var old="";
+			   edit_data(id,descriere, "descriere",old);  
+		  });  ; 
+		  $(document).on('click', '.btn_delete', function(){  
+			   var id=$(this).data("id6");  
+			   if(confirm("Are you sure you want to delete this?"))  
+			   {  
+					$.ajax({  
+						 url:"delete_cats.php",  
+						 method:"POST",  
+						 data:{id:id},  
+						 dataType:"text",  
+						 success:function(data){    
+							  fetch_data();  
+						 }  
+					});  
+			   }  
+		  });  
 	  }
 	  else
 	  {
-		  document.getElementById('live_data').style.display='none';
-		  document.getElementById('forUser').style.display='block';
+			function fetch_data()  
+		  {  
+			   $.ajax({  
+					url:"select_cat.php",  
+					method:"POST",  
+					success:function(data){  
+						 $('#live_data').html(data);  
+					}  
+			   });  
+		  }  
+		  fetch_data();  
+		  function edit_data(id, text, column_name,oldt)  
+		  {  
+			   $.ajax({  
+					url:"edit_cat.php",  
+					method:"POST",  
+					data:{id:id, text:text, column_name:column_name},  
+					dataType:"text",  
+					success:function(data){   
+							  fetch_data();  
+						 }  
+			   });  
+		  }  
+		  $(document).on('blur', '.titlu', function(){  
+			   var id = $(this).data("id1");  
+			   var titlu = $(this).text(); 
+				var old=$(this).data("title");
+			   edit_data(id, titlu, "titlu", old);  
+		  });    
+		  $(document).on('blur', '.descriere', function(){  
+			   var id = $(this).data("id2");  
+			   var descriere = $(this).text();  
+			   var old="";
+			   edit_data(id,descriere, "descriere",old);  
+		  });  ; 
+		  $(document).on('click', '.btn_delete', function(){  
+			   var id=$(this).data("id6");  
+			   if(confirm("Are you sure you want to delete this?"))  
+			   {  
+					$.ajax({  
+						 url:"delete_cat.php",  
+						 method:"POST",  
+						 data:{id:id},  
+						 dataType:"text",  
+						 success:function(data){    
+							  fetch_data();  
+						 }  
+					});  
+			   }  
+		  });  
 	  }
-      function fetch_data()  
-      {  
-           $.ajax({  
-                url:"select_cat_admin.php",  
-                method:"POST",  
-                success:function(data){  
-                     $('#live_data').html(data);  
-                }  
-           });  
-      }  
-      fetch_data();  
-      function edit_data(id, text, column_name,oldt)  
-      {  
-			var txt = prompt("Please insert msg:", "None.");
-           $.ajax({  
-                url:"edit_cat_admin.php",  
-                method:"POST",  
-                data:{id:id, text:text, column_name:column_name,txt:txt,oldt:oldt},  
-                dataType:"text",  
-				success:function(data){   
-                          fetch_data();  
-                     }  
-           });  
-      }  
-      $(document).on('blur', '.titlu', function(){  
-           var id = $(this).data("id1");  
-           var titlu = $(this).text(); 
-			var old=$(this).data("title");
-           edit_data(id, titlu, "titlu", old);  
-      });    
-	  $(document).on('blur', '.descriere', function(){  
-           var id = $(this).data("id2");  
-           var descriere = $(this).text();  
-		   var old="";
-           edit_data(id,descriere, "descriere",old);  
-      });  ; 
-      $(document).on('click', '.btn_delete', function(){  
-           var id=$(this).data("id6");  
-           if(confirm("Are you sure you want to delete this?"))  
-           {  
-                $.ajax({  
-                     url:"delete_cats.php",  
-                     method:"POST",  
-                     data:{id:id},  
-                     dataType:"text",  
-                     success:function(data){    
-                          fetch_data();  
-                     }  
-                });  
-           }  
-      });  
+      
  });  
  </script>

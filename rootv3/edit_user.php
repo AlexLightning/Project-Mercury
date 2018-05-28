@@ -11,10 +11,20 @@
 	 $result=mysqli_query($mysqli,$query2);
 	 $count=mysqli_num_rows($result);
 	 if($count==0)
-		 if($column_name=="admin" && $text>=0 && $text<=1)
+	 {
 			mysqli_query($mysqli, $sql);
+			$_SESSION['username']=$text;
+	 }
+			
  }
  else
-	 if($column_name=="admin" && $text>=0 && $text<=1)
-		mysqli_query($mysqli, $sql);
+ {
+	 if($column_name=="admin")
+	 {
+		if($text>=0 && $text<=1)
+			mysqli_query($mysqli, $sql);
+	 }
+	 else
+		 mysqli_query($mysqli, $sql);
+ }
  ?>
